@@ -1,101 +1,103 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>MemoryGame</title>
-        <meta name="description" content="">
-        <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-        <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
-        <link rel="stylesheet" href="/css/Main.css">
-    </head>
-    <body>
-        <!--Game Name-->
-        <div class="container">
-            <header>
-                <h1>Memory Game</h1>
-            </header>
 
-            <!--Score & Timer-->
-            <section class="score-panel">
-                <ul class="stars">
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                </ul>
-                <span class="moves">0</span> Moves
-                <span class="time">Time: <span class="minutes">00</span>:<span class="seconds">00</span></span>
-                <div class="restart">
-                    <i class="fa fa-restart"></i>
-                </div>
-            </section>
+<head>
+    <meta charset="utf-8">
+    <title>MemoryGame</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/Main.css">
+</head>
 
-            <!--Main Play Area-->
-            <ul class="deck">
-                <li class="card hidden">
-                    <i class="fa fa-diamond"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-paper-plane-o"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-anchor"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-bolt"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-cube"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-anchor"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-leaf"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-bicycle"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-diamond"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-bomb"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-leaf"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-bomb"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-bolt"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-bicycle"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-paper-plane-o"></i>
-                </li>
-                <li class="card hidden">
-                    <i class="fa fa-cube"></i>
-                </li>
+<body>
+    <!--Game Name-->
+    <div class="container">
+        <header>
+            <h1>Memory Game</h1>
+        </header>
+
+        <!--Score & Timer-->
+        <section class="score-panel">
+            <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
             </ul>
-        </div>
-        
-        <!--Win-->
-        <div class="winning-modal">
-            <div class="modal-box">
-              <span class="modal-close">&times;</span>
-              <p>You did it!</p>
-              <p>You completed the game in <span class="modal-moves">0</span> moves.</p>
-              <p>Your time was: <span class="modal-minutes">00</span>:<span class="modal-seconds">00</span></p>
-              <p>Click to replay again.</p>
-              <button class="repeat-game">Start over</button>
+            <span class="moves">0</span> Moves
+            <span class="time">Time: <span class="minutes">00</span>:<span class="seconds">00</span></span>
+            <div class="restart">
+                <i class="fa fa-restart"></i>
             </div>
-      
-          </div>
+        </section>
 
-        <!--Game Logic-->
-        <script src="/js/Interaction.js"></script>
-    </body>
+        <!--Main Play Area-->
+        <ul class="deck">
+            <li class="card hidden">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card hidden">
+                <i class="fa fa-cube"></i>
+            </li>
+        </ul>
+    </div>
+
+    <!--Win-->
+    <div class="winning-modal">
+        <div class="modal-box">
+            <span class="modal-close">&times;</span>
+            <p>You did it!</p>
+            <p>You completed the game in <span class="modal-moves">0</span> moves.</p>
+            <p>Your time was: <span class="modal-minutes">00</span>:<span class="modal-seconds">00</span></p>
+            <p>Click to replay again.</p>
+            <button class="repeat-game">Start over</button>
+        </div>
+    </div>
+
+    <!--Game Logic-->
+    <script src="js/Interaction.js"></script>
+</body>
+
 </html>

@@ -15,8 +15,8 @@ html, body {
 }
 
 body {
-    background-image: white url('/pics/geometry2.png');
-    font-family: 'Courier New', Courier, monospace;  
+    background: url('../pics/Space-Background.jpg'); /*needs to have the ../ in front to work*/
+    font-family: 'Times New Roman', Times, serif;  
 }
 
 
@@ -30,13 +30,13 @@ body {
 
 h1 {
     font-family: sans-serif;
-    font-weight: 300;
+    color: whitesmoke;
 }
 
 /*Deck of Cards Styling*/
 
 .deck {
-    width: 660px;
+    width: 680px;
     min-height: 680px;
     background: linear-gradient(to top, rgb(0, 0, 153), rgb(190, 0, 190));
     padding: 32px;
@@ -49,7 +49,7 @@ h1 {
     margin: 0 0 3em;
 }
 
-.deck, .card {
+.deck .card {
     height: 125px;
     width: 125px;
     background: darkslategray;
@@ -63,17 +63,17 @@ h1 {
     box-shadow: 5px 2px 20px 0 rgb(46, 19, 19);
 }
 
-.deck, .card.open {
+.deck .card.open {
     transform: rotateY(0);
-    background: lightblue;
+    background: lightcoral;
     cursor: default;
 }
 
-.deck, .card.show {
+.deck .card.show {
     font-size: 33px;
 }
 
-.deck, .card.match {
+.deck .card.match {
     cursor: default;
     background: teal;
     font-size: 33px;
@@ -84,6 +84,7 @@ h1 {
     text-align: left;
     width: 345px;
     margin-bottom: 10px;
+    color: whitesmoke;
 }
 
 .score-panel, .stars {
@@ -139,7 +140,7 @@ h1 {
   
   .modal-close:hover,
   .modal-close:focus {
-    color: black;
+    color: white;
     text-decoration: none;
     cursor: pointer;
   }
@@ -147,7 +148,7 @@ h1 {
   /* Nifty restart game button  */
   
   .repeat-game  {
-    background-color: #02ccba;
+    background-color: blueviolet;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -158,7 +159,7 @@ h1 {
   }
   
   .repeat-game:hover {
-    background-color: #aa7ecd;
+    background-color: palevioletred;
     cursor: pointer;
   }
   
